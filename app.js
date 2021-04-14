@@ -1,11 +1,25 @@
 var btnTranslate = document.querySelector("#btn-translate");
 var userInput = document.querySelector("#userInput");
-var output = document.querySelector("#outputText");
+var outputDiv = document.querySelector("#outputText");
+
+var serverURL = "https://serverapi.praveenmalviya.repl.co/translate/pm.json"
+
+// console.log(serverURL);
+
+// var callingapi = serverURL+"?text="+userInput.value;
+
+
+
 
 function clickHandler(){
-    // console.log("clicked");
-    // console.log(userInput.value);
-    output.innerHTML="you typed "+ userInput.value;
+    var callingapi = serverURL+"?text="+userInput.value;
+    fetch(callingapi)
+    .then(response => response.json())
+    .then(json => {
+        var translatedText = json.contents.translated;
+        outputDiv.innerText = translatedText;
+    })
+    
 };
 
 btnTranslate.addEventListener("click", clickHandler);

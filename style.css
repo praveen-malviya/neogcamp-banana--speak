@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #FDE68A;
+}
+
+header {
+    background-color: var(--primary-color);
+    text-align: center;
+    height: 100px;
+    box-sizing: border-box;
+
+
+
+}
+
+#header-Name {
+    /* color: yellowgreen; */
+    font-size: 3rem;
+    padding: 1rem;
+
+}
+
+main {
+    margin: auto;
+    width: 600px;
+    box-sizing: border-box;
+}
+
+#userInput {
+    box-sizing: border-box;
+    width: 100%;
+    /* height: 50px; */
+    min-height: 15vh;
+    display: block;
+    font-size: large;
+    margin-top: 4rem;
+    border-radius: 10px;
+    text-align: center;
+
+
+
+    background-color: ivory;
+}
+
+#btn-translate {
+    border: none;
+    margin: 2rem 0rem;
+    padding: 1rem 2rem;
+    background-color: var(--primary-color);
+    font-size: large;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+#outputText {
+    box-sizing: border-box;
+    font-size: large;
+    border: 1px solid black;
+    min-height: 12vh;
+    background-color: ivory;
+    margin-top: 2rem;
+    overflow: scroll;
+}
+
+footer {
+    background-color: var(--primary-color);
+    box-sizing: border-box;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer div{
+   text-align: center;
+}

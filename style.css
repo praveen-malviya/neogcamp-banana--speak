@@ -71,17 +71,21 @@ main {
     width: 98%;
     margin: auto;
     margin-top: 2rem;
+    margin-bottom: 5rem;
     overflow: scroll;
 }
 
 footer {
     background-color: var(--primary-color);
+    text-align: center;
+    /* height: 122px; */
     box-sizing: border-box;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+
+    
 }
 
 footer div{
-   text-align: center;
+    margin: auto;
+    max-width: 600px;
+    padding: 1rem;
 }

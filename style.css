@@ -14,7 +14,7 @@ body {
 header {
     background-color: var(--primary-color);
     text-align: center;
-    height: 100px;
+    min-height: 100px;
     box-sizing: border-box;
 
 
@@ -22,7 +22,7 @@ header {
 }
 
 #header-Name {
-    font-size: 220%;
+    font-size: 3rem;
     padding: 1rem;
 
 }
